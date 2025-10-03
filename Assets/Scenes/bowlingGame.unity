@@ -5929,9 +5929,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paddle: {fileID: 2622320291465532879}
   numberOfPaddles: 5
-  spawnRangeX: 40
-  spawnRangeZ: 40
   padHeightY: 1
+  moveSpeed: 5
+  forceApplicationInterval: 2
+  boundaryX: 40
+  boundaryZ: 40
 --- !u!4 &1868634722
 Transform:
   m_ObjectHideFlags: 0
@@ -6963,6 +6965,7 @@ GameObject:
   - component: {fileID: 1765500460260999376}
   - component: {fileID: 4567958550020994074}
   - component: {fileID: 4567958550020994075}
+  - component: {fileID: 4567958550020994076}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Enemy
@@ -7311,6 +7314,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.837678, y: 9.9908085, z: 0.336726}
   m_Center: {x: 0, y: 0.18470693, z: 0.011498004}
+--- !u!54 &4567958550020994076
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2622320291465532879}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
 --- !u!33 &4657016301731115323
 MeshFilter:
   m_ObjectHideFlags: 0
